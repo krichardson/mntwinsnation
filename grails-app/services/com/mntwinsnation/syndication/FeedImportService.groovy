@@ -78,6 +78,10 @@ class FeedImportService {
         return affectedItems
     }
 
+    /**
+     * If a non-standard date format is found, add a new mask
+     * to cover it in rome.properties
+     */
     private LocalDateTime getAPubDate(SyndEntry entry, SyndFeed feed) {
         if (entry.publishedDate) {
             return new LocalDateTime(entry.publishedDate.time)

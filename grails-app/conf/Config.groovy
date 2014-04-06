@@ -115,3 +115,10 @@ grails.gorm.default.mapping = {
     "user-type" type: org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime, class: org.joda.time.LocalDateTime
     "user-type" type: org.jadira.usertype.dateandtime.joda.PersistentLocalDate, class: org.joda.time.LocalDate
 }
+
+services {
+    opencalais {
+        serviceUrl = 'https://api.opencalais.com'
+        licenseId = 'tcqr4544jxqtbngdgvj8hqgx'
+    }
+}
