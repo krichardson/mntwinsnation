@@ -1,6 +1,6 @@
 package com.mntwinsnation
 
-class Post {
+class Post extends Content {
 
     static constraints = {
     }
