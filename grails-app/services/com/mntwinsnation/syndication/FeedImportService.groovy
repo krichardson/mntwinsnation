@@ -65,7 +65,7 @@ class FeedImportService {
                     log.info("${item.guid} already exists, so will update")
                 }
                 item.with {
-                    it.pubDate = pubDate
+                    it.pubDate = pubDate.toDate()
                     it.title = entry.title
                     it.description = entry.description.value
                     it.url = entry.link

@@ -8,7 +8,8 @@ class Item extends Content {
     String url
     String description
     String guid
-    LocalDateTime pubDate
+    //TODO: Why is this mapping to the db as varbinary??? Other LocalDateTimes are working
+    Date pubDate
 
     static belongsTo = [channel : Channel]
 

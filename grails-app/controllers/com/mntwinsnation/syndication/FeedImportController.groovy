@@ -10,7 +10,7 @@ class FeedImportController {
         List<Item> affectedItems = feedImportService.importLatestItems()
 
         render affectedItems.sort { it.channel.title }.collect {
-            [title: it.title, url: it.url, pubDate: it.pubDate.toDate()]
+            [title: it.title, url: it.url, pubDate: it.pubDate]
         } as JSON
 
     }
